@@ -1,4 +1,4 @@
-  local status, packer = pcall(require, 'packer')
+local status, packer = pcall(require, 'packer')
 if (not status) then
   print('Packer is not installed')
   return
@@ -25,6 +25,14 @@ packer.startup(function(use)
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
   }
+  -- Nvim tree
+  use {
+    'kyazdani42/nvim-tree.lua', -- filesystem navigation
+    requires = {
+      'kyazdani42/nvim-web-devicons'
+    },
+    tag = 'nightly'
+  }
 
   use 'jose-elias-alvarez/null-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more
   use 'MunifTanjim/prettier.nvim' -- Prettier plugin for Neovim's built-in LSP client
@@ -37,7 +45,7 @@ packer.startup(function(use)
   use 'windwp/nvim-ts-autotag'
 
   use 'nvim-lua/plenary.nvim' -- Common utilities
-  use 'nvim-telescope/telescope.nvim' 
+  use 'nvim-telescope/telescope.nvim'
   use 'nvim-telescope/telescope-file-browser.nvim'
 
   use 'akinsho/nvim-bufferline.lua'
