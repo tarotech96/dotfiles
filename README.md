@@ -92,8 +92,11 @@ Copy the configurations to nvim folder
 
 <img width="1198" alt="Screen Shot 2022-08-11 at 17 55 23" src="https://user-images.githubusercontent.com/44078555/184098688-4210b412-bf74-4eea-acfe-8990404af660.png">
 
-**Search with shorcut `;f` or `;r` or `;sf`**
+**Quick search file with shortcut `;f` or `;r` or `;sf`**
 
 <img width="1193" alt="Screen Shot 2022-08-11 at 17 57 25" src="https://user-images.githubusercontent.com/44078555/184099100-167b4a09-4ba9-4c38-87fd-a93318f033b7.png">
+
+**Open project with Nvim-Tree**
+<img width="1193" alt="Screen Shot 2022-08-12 at 14 01 51" src="https://user-images.githubusercontent.com/44078555/184288084-7ba3d803-f294-42bc-af8b-820e203078e3.png">
 
 and more...🥳
