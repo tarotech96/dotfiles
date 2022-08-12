@@ -12,10 +12,68 @@ nvim_tree.setup({
     }
   },
   renderer = {
-    group_empty = true
+    group_empty = false,
+    add_trailing = false,
+    highlight_git = false,
+    full_name = false,
+    highlight_opened_files = "none",
+    root_folder_modifier = ":~",
+    indent_markers = {
+      enable = false,
+      inline_arrows = true,
+      icons = {
+        corner = "└",
+        edge = "│",
+        item = "│",
+        none = " ",
+      }
+    },
+    icons = {
+      webdev_colors = true,
+      git_placement = "before",
+      padding = " ",
+      symlink_arrow = " ➛ ",
+      show = {
+        file = true,
+        folder = true,
+        folder_arrow = true,
+        git = true,
+      },
+      glyphs = {
+        default = "",
+        symlink = "",
+        bookmark = "",
+        folder = {
+          arrow_closed = "",
+          arrow_open = "",
+          default = "",
+          open = "",
+          empty = "",
+          empty_open = "",
+          symlink = "",
+          symlink_open = "",
+        },
+        git = {
+          unstaged = "✗",
+          staged = "✓",
+          unmerged = "",
+          renamed = "➜",
+          untracked = "★",
+          deleted = "",
+          ignored = "◌",
+        },
+      }
+    },
+    special_files = { "Cargo.toml", "Makefile", "README.md", "readme.md" },
+    symlink_destination = true,
   },
   filters = {
-    dotfiles = true,
-    custom = { "^.git$" }
+    dotfiles = false,
+    custom = {},
+    exclude = {}
+  },
+  filesystem_watchers = {
+    enable = true,
+    debounce_delay = 50
   }
 })
