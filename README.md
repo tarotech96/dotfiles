@@ -83,6 +83,12 @@ Copy the configurations to nvim folder
  mv ~/dotfiles ~/.config/nvim
 ```
 
+## Quick setup with .sh file
+You can set up all configurations quickly with run **setup.sh** file
+```
+ ./setup.sh
+```
+
 ## Result
 **Autocomple**
 
