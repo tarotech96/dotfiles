@@ -72,8 +72,8 @@ git clone $REPO_URL ~/.config/nvim
 # Install plugins with PackerInstall command
 # cd ~/.config/nvim
 # nvim lua/plugins.lua
-#
+# Type :PackerInstall to install plugins
 
 echo "******************************************************************************************"
 echo "*****************************Finished settting up*****************************************"
-echo "******************************************************************************************" type PackerInstall to install plugins
+echo "******************************************************************************************" 
