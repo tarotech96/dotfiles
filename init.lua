@@ -2,6 +2,7 @@ require('base')
 require('highlights')
 require('maps')
 require('plugins')
+require('filetype')
 
 
 local has = function(x)

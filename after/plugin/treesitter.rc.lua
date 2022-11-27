@@ -17,10 +17,15 @@ treesitter.setup {
     'tsx',
     'lua',
     'json',
-    'css'
+    'css',
+    'scss',
+    'html',
+    'dart',
+    'astro',
+    'markdown',
+    'yaml'
   },
   autotag = {
     enable = true,
   }
 }
-

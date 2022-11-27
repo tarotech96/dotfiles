@@ -53,4 +53,10 @@ packer.startup(function(use)
 
   use 'lewis6991/gitsigns.nvim' -- Gitsigns
   use 'dinhhuy258/git.nvim' -- For git blame. & browser
+
+  -- Flutter-Tools
+  use {
+    'akinsho/flutter-tools.nvim',
+    requires = 'nvim-lua/plenary.nvim'
+  }
 end)
